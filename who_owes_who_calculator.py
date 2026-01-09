@@ -1,8 +1,8 @@
 def main():
     # my girlfriend and I are still separate in terms of finances, so this is a small "cute" 
     # script to help us figure out who owes who when we balance our purchases that 
-    #involve each other.
-    # Get person 1's information
+    # involve each other.
+    # person 1's information
     person1_name = input("Enter the name of person 1: ")
     num_purchases_p1 = int(input(f"How many purchases did {person1_name} make? "))
     
@@ -11,7 +11,7 @@ def main():
         purchase = float(input(f"Enter purchase {i+1} amount for {person1_name}: $"))
         person1_purchases.append(purchase)
     
-    # Get person 2's information
+    # person 2's information
     person2_name = input("\nEnter the name of person 2: ")
     num_purchases_p2 = int(input(f"How many purchases did {person2_name} make? "))
     
@@ -20,7 +20,7 @@ def main():
         purchase = float(input(f"Enter purchase {i+1} amount for {person2_name}: $"))
         person2_purchases.append(purchase)
     
-    # Calculate totals
+    #  sums
     person1_total = sum(person1_purchases)
     person2_total = sum(person2_purchases)
     
@@ -28,7 +28,7 @@ def main():
     print(f"\n{person1_name} spent: ${person1_total:.2f}")
     print(f"{person2_name} spent: ${person2_total:.2f}")
     
-    # Determine who owes who
+    # who owes who?
     difference = abs(person1_total - person2_total)
     
     if person1_total > person2_total:
