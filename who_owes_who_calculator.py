@@ -2,6 +2,8 @@ def main():
     # my girlfriend and I are still separate in terms of finances, so this is a small "cute" 
     # script to help us figure out who owes who when we balance our purchases that 
     # involve each other.
+    print("Welcome to the Who Owes Who Calculator!")
+    print("-----------------------------------------`")
     # person 1's information
     person1_name = input("Enter the name of person 1: ")
     num_purchases_p1 = int(input(f"How many purchases did {person1_name} make? "))
